@@ -1,0 +1,70 @@
+uuid: e25c1d60-24a5-4c53-bec7-ce48f90af5ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.event_comment_type.default
+    - field.field.node.events.body
+    - field.field.node.events.field_comment
+    - field.field.node.events.field_end_date
+    - field.field.node.events.field_event_is
+    - field.field.node.events.field_event_type
+    - field.field.node.events.field_hero_image
+    - field.field.node.events.field_start_date
+    - node.type.events
+  module:
+    - comment
+    - image
+    - options
+    - text
+    - user
+id: node.events.default
+targetEntityType: node
+bundle: events
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_comment:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_event_is:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_event_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_end_date: true
+  field_start_date: true
+  links: true

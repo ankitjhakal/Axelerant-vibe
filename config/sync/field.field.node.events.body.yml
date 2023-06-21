@@ -1,0 +1,23 @@
+uuid: 2d283ad1-5f29-4020-b1a0-c4cd432950cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.events
+  module:
+    - text
+id: node.events.body
+field_name: body
+entity_type: node
+bundle: events
+label: 'Event disclaimer'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

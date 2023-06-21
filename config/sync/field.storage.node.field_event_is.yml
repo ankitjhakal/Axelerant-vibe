@@ -1,0 +1,27 @@
+uuid: b225c3fc-fcfe-4554-b79f-03e904c6903c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_is
+field_name: field_event_is
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: In-person
+      label: In-person
+    -
+      value: 'In-person with livestream'
+      label: 'In-person with livestream'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
