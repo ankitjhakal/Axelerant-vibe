@@ -1,0 +1,23 @@
+.main-content {
+    display: flex;
+
+    #block-mainnavigation,
+    #block-views-block-user-info-block-block-1,
+    #block-views-block-events-block-1 {
+        padding: 30px;
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 30px;
+    }
+
+    >.section {
+        margin: 0 30px;
+
+        .contextual-region {
+            padding: 30px;
+            border-radius: 20px;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+    }
+}

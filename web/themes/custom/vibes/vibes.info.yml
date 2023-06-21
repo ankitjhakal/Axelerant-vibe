@@ -10,5 +10,5 @@ regions:
   right_sidebar: 'Right Sidebar'
   footer: 'Footer'
 libraries: 
-  - agency/global-css
-  - agency/global-js
+  - vibes/global-css
+  - vibes/global-js

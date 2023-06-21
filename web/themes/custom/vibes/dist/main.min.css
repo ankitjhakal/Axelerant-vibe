@@ -1,0 +1,47 @@
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \************************************************************************************************************/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #E5E5E5;
+  padding: 30px;
+}
+
+#page-wrapper header .layout-container > div {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin: 30px 0;
+}
+#page-wrapper header .layout-container > div form {
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+}
+.main-content #block-mainnavigation,
+.main-content #block-views-block-user-info-block-block-1,
+.main-content #block-views-block-events-block-1 {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.main-content > .section {
+  margin: 0 30px;
+}
+.main-content > .section .contextual-region {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 30px;
+}
