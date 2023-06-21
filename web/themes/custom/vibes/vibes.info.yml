@@ -1,0 +1,14 @@
+name: Vibes
+type: theme
+core_version_requirement: ^9
+description: 'Axelerant Vibes - Social Media Platform'
+base theme: false
+regions:
+  header: 'Header'
+  left_sidebar: 'Left Sidebar'
+  content: Content
+  right_sidebar: 'Right Sidebar'
+  footer: 'Footer'
+libraries: 
+  - agency/global-css
+  - agency/global-js
