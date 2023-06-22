@@ -40,65 +40,124 @@ section.section {
             }
         }
 
-        >.views-row {
-            padding: 30px;
+       
+    }
+}
+
+.article {
+
+    >.views-row {
+        padding: 30px;
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 30px;
+        .views-field-field-event-is {
+            display: inline-block;
             border-radius: 20px;
-            background-color: white;
-            margin-bottom: 30px;
-            .views-field-field-event-is {
-                display: inline-block;
-                border-radius: 20px;
-                background-color: #FC4C02;
-                font-size: 13px;
-                padding: 5px 10px;
-                color: white;
-            }
+            background-color: #FC4C02;
+            font-size: 13px;
+            padding: 5px 10px;
+            color: white;
+        }
 
-            .views-field-uid {
-                a {
-                    text-transform: capitalize;
-                    font-size: 22px;
-                    font-weight: 700;
-                }
+        .views-field-uid {
+            a {
+                text-transform: capitalize;
+                font-size: 22px;
+                font-weight: 700;
             }
+        }
 
-            .views-field-field-event-type {
-                display: inline-block;
-                margin-left: 10px;
-                border-radius: 20px;
-                background-color: #1C66FB;
-                font-size: 13px;
-                padding: 5px 10px;
-                color: white;
-            }
+        .views-field-field-event-type {
+            display: inline-block;
+            margin-left: 10px;
+            border-radius: 20px;
+            background-color: #1C66FB;
+            font-size: 13px;
+            padding: 5px 10px;
+            color: white;
+        }
 
-            .views-field-title {
-                float: left;
-                margin-right: 10px;
-                margin-top: 3px;
-                a {
-                    color: #A0A0A0;
-                }
-            }
-
-            .views-field-body {
-                color: #757575;
-                margin: 30px 0 15px;
-            }
-
-            .views-field-nothing {
+        .views-field-title {
+            float: left;
+            margin-right: 10px;
+            margin-top: 3px;
+            a {
                 color: #A0A0A0;
             }
+        }
 
-            .views-field-field-hero-image {
-                margin: 30px 0 25px;
+        .views-field-body {
+            color: #757575;
+            margin: 30px 0 15px;
+        }
 
-                img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 20px;
-                }
+        .views-field-nothing {
+            color: #A0A0A0;
+        }
+
+        .views-field-field-hero-image {
+            margin: 30px 0 25px;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
             }
+        }
+    }
+}
+
+.views-exposed-form {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    .js-form-type-textfield {
+        margin-bottom: 30px;
+        input.form-text {
+            background-color: #F5F5F5;
+            border: none;
+            border-radius: 12px;
+            height: 44px;
+            width: 100%;
+            max-width: 415px;
+            padding: 0 15px;
+    
+            &::-webkit-search-cancel-button {
+                -webkit-appearance: searchfield-cancel-button;
+                position: absolute;
+                right: 80px;
+    
+            }
+        }
+    }
+    fieldset {
+        margin-bottom: 30px;
+        legend {
+            margin-bottom: 15px;
+        }
+        .form-checkboxes {
+            .js-form-type-checkbox  {
+                margin-bottom: 5px;
+            }
+        }
+        
+    }
+
+    #edit-actions--2 {
+        #edit-submit-events--2 {
+            padding: 10px 30px;
+            background-color: #FC4C02;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            margin-right: 20px;
+        }
+        #edit-reset--2 {
+            background: none;
+            color: #FC4C02;
+            border: none;
         }
     }
 }

@@ -1,3 +1,118 @@
-#block-vibes-content {
-    
+.homepage-feeds {
+    article {
+        padding: 30px;
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 30px;
+
+        .article-header {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            h3 {
+                text-transform: capitalize;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+
+                &>span {
+                    margin-right: 10px;
+                }
+            }
+
+            h2,
+            h2 a {
+                font-size: 16px;
+                font-weight: 400;
+                color: #A0A0A0;
+            }
+
+            .label-orange {
+                display: inline-block;
+                border-radius: 20px;
+                background-color: #FC4C02;
+                font-size: 13px;
+                padding: 5px 10px;
+                color: white;
+                font-weight: 400;
+            }
+
+            .label-blue {
+                display: inline-block;
+                margin-left: 10px;
+                border-radius: 20px;
+                background-color: #1C66FB;
+                font-size: 13px;
+                padding: 5px 10px;
+                color: white;
+                font-weight: 400;
+            }
+        }
+
+        .body-text {
+            color: #757575;
+            margin-bottom: 30px;
+        }
+
+        .hero-image {
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+
+
+
+        video {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .stat-section {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+
+            .votingapi-reaction-item-wrapper {
+                display: flex;
+                align-items: center;
+
+                .votingapi-reaction-item {
+                    background: none;
+                    border: none;
+                    padding: 0;
+                    .votingapi-reaction-image {
+                        width: 18px;
+                        height: 18px;
+                        margin: 0;
+                    }
+                }
+                .votingapi-reaction-count {
+                    padding: 0;
+                    color: #FC4C02;
+                    position: relative;
+                    top: -2px;
+                    margin-left: 5px;
+                }
+            }
+
+            .comment-count {
+                display: flex;
+                align-items: center;
+                color: #A0A0A0;
+                margin-left: 25px;
+
+                span {
+                    color: #FC4C02;
+                    display: inline-block;
+                    position: relative;
+                    top: -2px;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
 }

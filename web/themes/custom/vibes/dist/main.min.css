@@ -73,25 +73,65 @@ body {
   border: none;
   color: #FC4C02;
 }
-#page-wrapper header .layout-container > div .contextual-region#block-views-block-user-info-block-block-1-2 .views-row {
+#page-wrapper header .layout-container > div .contextual-region.user-info .views-row {
   display: flex;
   align-items: center;
 }
-#page-wrapper header .layout-container > div .contextual-region#block-views-block-user-info-block-block-1-2 .views-row .views-field-user-picture {
+#page-wrapper header .layout-container > div .contextual-region.user-info .views-row .views-field-user-picture {
   margin-right: 15px;
 }
-#page-wrapper header .layout-container > div .contextual-region#block-views-block-user-info-block-block-1-2 .views-row .views-field-user-picture img {
+#page-wrapper header .layout-container > div .contextual-region.user-info .views-row .views-field-user-picture img {
   width: 50px;
   height: 50px;
   border-radius: 20px;
   object-fit: cover;
 }
-#page-wrapper header .layout-container > div .contextual-region#block-views-block-user-info-block-block-1-2 .views-row .views-field-view-user {
+#page-wrapper header .layout-container > div .contextual-region.user-info .views-row .views-field-view-user {
   display: none;
 }
-#page-wrapper header .layout-container > div .contextual-region#block-views-block-user-info-block-block-1-2 a {
+#page-wrapper header .layout-container > div .contextual-region.user-info a {
   text-transform: capitalize;
   text-decoration: none;
+}
+
+input[type=checkbox] {
+  position: relative;
+  border: 2px solid #FC4C02;
+  border-radius: 2px;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  margin: 0 0.6em 0 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  opacity: 0.5;
+}
+
+input[type=checkbox]:hover {
+  opacity: 1;
+}
+
+input[type=checkbox]:checked {
+  background-color: #FC4C02;
+  opacity: 1;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
 }
 
 .main-content {
@@ -124,10 +164,10 @@ body {
   border-radius: 20px;
   object-fit: cover;
 }
-.main-content #sidebar-first .views-row .views-field-view-user {
+.main-content #sidebar-first .views-row .views-field-nothing {
   margin-top: 100px;
 }
-.main-content #sidebar-first .views-row .views-field-view-user a {
+.main-content #sidebar-first .views-row .views-field-nothing a {
   padding: 10px 30px;
   background-color: #FC4C02;
   color: white;
@@ -136,10 +176,13 @@ body {
 .main-content #sidebar-first .views-row .views-field-name {
   margin-top: 15px;
 }
-.main-content #sidebar-first .views-row .views-field-name a {
+.main-content #sidebar-first .views-row .views-field-name span {
   font-size: 22px;
   font-weight: 700;
   text-transform: capitalize;
+}
+.main-content #sidebar-first .views-row .views-field-field-designation {
+  color: #757575;
 }
 .main-content #sidebar-second {
   width: 30%;
@@ -148,12 +191,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 24px;
+  padding: 0;
 }
 .main-content #sidebar-second .contextual-region .views-row:last-child {
   margin-bottom: 0;
 }
 .main-content #sidebar-second .contextual-region .views-row .views-field-field-hero-image {
-  margin-right: 10px;
+  margin: 0 10px 0 0;
 }
 .main-content #sidebar-second .contextual-region .views-row .views-field-field-hero-image img {
   width: 50px;
@@ -216,6 +260,105 @@ body {
   margin-bottom: 30px;
 }
 
+.homepage-feeds article {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.homepage-feeds article .article-header {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.homepage-feeds article .article-header h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.homepage-feeds article .article-header h3 > span {
+  margin-right: 10px;
+}
+.homepage-feeds article .article-header h2,
+.homepage-feeds article .article-header h2 a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #A0A0A0;
+}
+.homepage-feeds article .article-header .label-orange {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: #FC4C02;
+  font-size: 13px;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 400;
+}
+.homepage-feeds article .article-header .label-blue {
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: #1C66FB;
+  font-size: 13px;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 400;
+}
+.homepage-feeds article .body-text {
+  color: #757575;
+  margin-bottom: 30px;
+}
+.homepage-feeds article .hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.homepage-feeds article video {
+  width: 100% !important;
+  height: auto !important;
+}
+.homepage-feeds article .stat-section {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.homepage-feeds article .stat-section .votingapi-reaction-item-wrapper {
+  display: flex;
+  align-items: center;
+}
+.homepage-feeds article .stat-section .votingapi-reaction-item-wrapper .votingapi-reaction-item {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.homepage-feeds article .stat-section .votingapi-reaction-item-wrapper .votingapi-reaction-item .votingapi-reaction-image {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+.homepage-feeds article .stat-section .votingapi-reaction-item-wrapper .votingapi-reaction-count {
+  padding: 0;
+  color: #FC4C02;
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+}
+.homepage-feeds article .stat-section .comment-count {
+  display: flex;
+  align-items: center;
+  color: #A0A0A0;
+  margin-left: 25px;
+}
+.homepage-feeds article .stat-section .comment-count span {
+  color: #FC4C02;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  margin-left: 8px;
+}
+
 section.section .event-body .views-exposed-form {
   padding: 30px;
   border-radius: 20px;
@@ -255,13 +398,14 @@ section.section .event-body .views-exposed-form .js-form-item select {
   width: 100%;
   padding: 0 15px;
 }
-section.section .event-body > .views-row {
+
+.article > .views-row {
   padding: 30px;
   border-radius: 20px;
   background-color: white;
   margin-bottom: 30px;
 }
-section.section .event-body > .views-row .views-field-field-event-is {
+.article > .views-row .views-field-field-event-is {
   display: inline-block;
   border-radius: 20px;
   background-color: #FC4C02;
@@ -269,12 +413,12 @@ section.section .event-body > .views-row .views-field-field-event-is {
   padding: 5px 10px;
   color: white;
 }
-section.section .event-body > .views-row .views-field-uid a {
+.article > .views-row .views-field-uid a {
   text-transform: capitalize;
   font-size: 22px;
   font-weight: 700;
 }
-section.section .event-body > .views-row .views-field-field-event-type {
+.article > .views-row .views-field-field-event-type {
   display: inline-block;
   margin-left: 10px;
   border-radius: 20px;
@@ -283,26 +427,72 @@ section.section .event-body > .views-row .views-field-field-event-type {
   padding: 5px 10px;
   color: white;
 }
-section.section .event-body > .views-row .views-field-title {
+.article > .views-row .views-field-title {
   float: left;
   margin-right: 10px;
   margin-top: 3px;
 }
-section.section .event-body > .views-row .views-field-title a {
+.article > .views-row .views-field-title a {
   color: #A0A0A0;
 }
-section.section .event-body > .views-row .views-field-body {
+.article > .views-row .views-field-body {
   color: #757575;
   margin: 30px 0 15px;
 }
-section.section .event-body > .views-row .views-field-nothing {
+.article > .views-row .views-field-nothing {
   color: #A0A0A0;
 }
-section.section .event-body > .views-row .views-field-field-hero-image {
+.article > .views-row .views-field-field-hero-image {
   margin: 30px 0 25px;
 }
-section.section .event-body > .views-row .views-field-field-hero-image img {
+.article > .views-row .views-field-field-hero-image img {
   width: 100%;
   height: auto;
   border-radius: 20px;
+}
+
+.views-exposed-form {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.views-exposed-form .js-form-type-textfield {
+  margin-bottom: 30px;
+}
+.views-exposed-form .js-form-type-textfield input.form-text {
+  background-color: #F5F5F5;
+  border: none;
+  border-radius: 12px;
+  height: 44px;
+  width: 100%;
+  max-width: 415px;
+  padding: 0 15px;
+}
+.views-exposed-form .js-form-type-textfield input.form-text::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+  position: absolute;
+  right: 80px;
+}
+.views-exposed-form fieldset {
+  margin-bottom: 30px;
+}
+.views-exposed-form fieldset legend {
+  margin-bottom: 15px;
+}
+.views-exposed-form fieldset .form-checkboxes .js-form-type-checkbox {
+  margin-bottom: 5px;
+}
+.views-exposed-form #edit-actions--2 #edit-submit-events--2 {
+  padding: 10px 30px;
+  background-color: #FC4C02;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  margin-right: 20px;
+}
+.views-exposed-form #edit-actions--2 #edit-reset--2 {
+  background: none;
+  color: #FC4C02;
+  border: none;
 }
