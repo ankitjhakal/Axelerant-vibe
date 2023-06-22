@@ -1,0 +1,28 @@
+uuid: 648ac0ca-25ff-4ee3-8c75-3b2d97913644
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - vibes
+id: exposedformeventspage_1
+theme: vibes
+region: right_sidebar
+weight: -3
+provider: null
+plugin: 'views_exposed_filter_block:events-page_1'
+settings:
+  id: 'views_exposed_filter_block:events-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /events

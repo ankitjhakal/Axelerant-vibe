@@ -1,0 +1,8 @@
+uuid: b9db2df9-0d3e-4419-8800-f96093545ec6
+langcode: en
+status: true
+dependencies: {  }
+id: post_comment_type
+label: 'Post Comment Type'
+target_entity_type_id: node
+description: 'To add comment to a post'

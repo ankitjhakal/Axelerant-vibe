@@ -17,10 +17,16 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/adminimal_admin_toolbar": "^1.11",
+        "drupal/better_exposed_filters": "^6.0",
+        "drupal/conditional_fields": "^4.0@alpha",
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
-        "drupal/views_layout": "^1.2",
+        "drupal/devel": "^5.0",
+        "drupal/video": "^3.0",
+        "drupal/video_embed_media_player": "^1.0",
+        "drupal/votingapi": "^3.0@beta",
+        "drupal/votingapi_reaction": "^1.5",
         "drush/drush": "^11.6"
     },
     "conflict": {

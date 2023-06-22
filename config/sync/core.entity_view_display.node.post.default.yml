@@ -1,0 +1,90 @@
+uuid: 72ef301b-1a67-4c48-8ce2-48ef516019f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.post_comment_type.default
+    - field.field.node.post.body
+    - field.field.node.post.field_like
+    - field.field.node.post.field_post_comment
+    - field.field.node.post.field_post_image
+    - field.field.node.post.field_post_type
+    - field.field.node.post.field_post_video
+    - field.field.node.post.field_video_transcript
+    - node.type.post
+  module:
+    - comment
+    - text
+    - user
+    - video
+    - votingapi_reaction
+id: node.post.default
+targetEntityType: node
+bundle: post
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_like:
+    type: votingapi_reaction_default
+    label: hidden
+    settings:
+      show_summary: false
+      show_icon: true
+      show_label: false
+      show_count: true
+      sort_reactions: none
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_post_comment:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_post_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_post_video:
+    type: video_player_list
+    label: hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      muted: false
+      width: '500'
+      height: '480'
+      preload: none
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_video_transcript:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_post_type: true

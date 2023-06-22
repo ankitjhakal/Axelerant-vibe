@@ -1,0 +1,10 @@
+<?php
+
+function vibes_preprocess_node(&$variables) {
+  if ($variables['node']->getType() == 'post') {
+    $variables['post_comment_count'] = $variables['node']->get('field_post_comment')->comment_count;
+  }
+  if ($variables['node']->getType() == 'events') {
+    $variables['events_comment_count'] = $variables['node']->get('field_comment')->comment_count;
+  }
+}

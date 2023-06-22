@@ -1,0 +1,14 @@
+uuid: 2068f65f-0c6f-435b-8fc3-f6ab8175c16d
+langcode: en
+status: true
+dependencies:
+  module:
+    - votingapi_reaction
+third_party_settings:
+  votingapi_reaction:
+    reaction: true
+    icon: ''
+id: reaction_surprised
+label: 'I''m surprised'
+value_type: points
+description: 'Automatically created reaction'

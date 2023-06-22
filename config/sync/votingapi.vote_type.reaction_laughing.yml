@@ -1,0 +1,14 @@
+uuid: 7232ca93-2dbc-45c2-b84e-95bce635003d
+langcode: en
+status: true
+dependencies:
+  module:
+    - votingapi_reaction
+third_party_settings:
+  votingapi_reaction:
+    reaction: true
+    icon: ''
+id: reaction_laughing
+label: 'I''m laughing'
+value_type: points
+description: 'Automatically created reaction'

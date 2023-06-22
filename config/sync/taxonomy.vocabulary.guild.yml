@@ -1,0 +1,8 @@
+uuid: f0fc6c0e-c9f4-4a50-b888-567f86eabc44
+langcode: en
+status: true
+dependencies: {  }
+name: Guild
+vid: guild
+description: ''
+weight: 0

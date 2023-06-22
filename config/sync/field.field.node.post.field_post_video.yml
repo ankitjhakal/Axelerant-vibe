@@ -1,0 +1,26 @@
+uuid: 951f6afc-f442-49e3-8616-749450a540eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post_video
+    - node.type.post
+  module:
+    - video
+id: node.post.field_post_video
+field_name: field_post_video
+entity_type: node
+bundle: post
+label: 'Post Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: ''
+  max_filesize: ''
+field_type: video
