@@ -57,6 +57,8 @@ module:
   video_embed_media: 0
   video_embed_media_player: 0
   views_ui: 0
+  votingapi: 0
+  votingapi_reaction: 0
   views: 10
   standard: 1000
 theme:

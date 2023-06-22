@@ -25,6 +25,8 @@
         "drupal/devel": "^5.0",
         "drupal/video": "^3.0",
         "drupal/video_embed_media_player": "^1.0",
+        "drupal/votingapi": "^3.0@beta",
+        "drupal/votingapi_reaction": "^1.5",
         "drush/drush": "^11.6"
     },
     "conflict": {

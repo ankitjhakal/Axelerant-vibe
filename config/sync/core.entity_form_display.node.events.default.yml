@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.events.field_event_is
     - field.field.node.events.field_event_type
     - field.field.node.events.field_hero_image
+    - field.field.node.events.field_like
     - field.field.node.events.field_start_date
     - image.style.thumbnail
     - node.type.events
@@ -122,4 +123,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_like: true

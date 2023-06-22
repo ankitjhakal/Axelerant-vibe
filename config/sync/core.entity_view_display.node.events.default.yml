@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.events.field_event_is
     - field.field.node.events.field_event_type
     - field.field.node.events.field_hero_image
+    - field.field.node.events.field_like
     - field.field.node.events.field_start_date
     - node.type.events
   module:
@@ -18,6 +19,7 @@ dependencies:
     - options
     - text
     - user
+    - votingapi_reaction
 id: node.events.default
 targetEntityType: node
 bundle: events
@@ -37,7 +39,7 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_event_is:
     type: list_default
@@ -63,6 +65,18 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_like:
+    type: votingapi_reaction_default
+    label: hidden
+    settings:
+      show_summary: false
+      show_icon: true
+      show_label: false
+      show_count: false
+      sort_reactions: none
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden:
   field_end_date: true
