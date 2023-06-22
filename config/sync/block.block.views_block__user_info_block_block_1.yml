@@ -1,0 +1,25 @@
+uuid: c8a14566-49cf-4bcc-9179-07d242b50ec0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.user_info_block
+  module:
+    - views
+  theme:
+    - vibes
+id: views_block__user_info_block_block_1
+theme: vibes
+region: left_sidebar
+weight: 0
+provider: null
+plugin: 'views_block:user_info_block-block_1'
+settings:
+  id: 'views_block:user_info_block-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -9,6 +9,56 @@
         margin: 30px 0;
         form {
             display: flex;
+            position: relative;
+            width: 100%;
+            .js-form-item {
+                width: 100%; 
+                text-align: right;
+            }
+        }
+        .contextual-region {
+            width: 33%;
+            &#block-vibes-site-branding {
+                display: flex;
+                justify-content: center;
+            }
+            &#block-vibes-search-form-narrow {
+                display: flex;
+                justify-content: flex-end;
+                input.form-search {
+                    background-color: #F5F5F5;
+                    border: none;
+                    border-radius: 12px;
+                    height: 44px;
+                    width: 100%;
+                    max-width: 415px;
+                    padding: 0 15px;
+                    &::-webkit-search-cancel-button {
+                        -webkit-appearance: searchfield-cancel-button;
+                        position: absolute;
+                        right: 80px;
+
+                    }
+                }
+                .form-actions {
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    height: 100%;
+                    display: flex;
+                    .button {
+                        background-color: transparent;
+                        border: none;
+                        color: #FC4C02;
+                    }
+                }
+            }
+            &#block-views-block-user-info-block-block-1-2 {
+                a {
+                    text-transform: capitalize;
+                    text-decoration: none;
+                }
+            }
         }
     }
    

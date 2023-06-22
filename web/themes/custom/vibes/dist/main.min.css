@@ -7,9 +7,15 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #071B2A;
+}
+
 body {
   background-color: #E5E5E5;
   padding: 30px;
+  font-family: "Open Sans";
 }
 
 #page-wrapper header .layout-container > div {
@@ -23,10 +29,95 @@ body {
 }
 #page-wrapper header .layout-container > div form {
   display: flex;
+  position: relative;
+  width: 100%;
+}
+#page-wrapper header .layout-container > div form .js-form-item {
+  width: 100%;
+  text-align: right;
+}
+#page-wrapper header .layout-container > div .contextual-region {
+  width: 33%;
+}
+#page-wrapper header .layout-container > div .contextual-region#block-vibes-site-branding {
+  display: flex;
+  justify-content: center;
+}
+#page-wrapper header .layout-container > div .contextual-region#block-vibes-search-form-narrow {
+  display: flex;
+  justify-content: flex-end;
+}
+#page-wrapper header .layout-container > div .contextual-region#block-vibes-search-form-narrow input.form-search {
+  background-color: #F5F5F5;
+  border: none;
+  border-radius: 12px;
+  height: 44px;
+  width: 100%;
+  max-width: 415px;
+  padding: 0 15px;
+}
+#page-wrapper header .layout-container > div .contextual-region#block-vibes-search-form-narrow input.form-search::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+  position: absolute;
+  right: 80px;
+}
+#page-wrapper header .layout-container > div .contextual-region#block-vibes-search-form-narrow .form-actions {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  height: 100%;
+  display: flex;
+}
+#page-wrapper header .layout-container > div .contextual-region#block-vibes-search-form-narrow .form-actions .button {
+  background-color: transparent;
+  border: none;
+  color: #FC4C02;
+}
+#page-wrapper header .layout-container > div .contextual-region#block-views-block-user-info-block-block-1-2 a {
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 .main-content {
   display: flex;
+  justify-content: space-between;
+}
+.main-content #sidebar-first {
+  width: 20%;
+}
+.main-content #sidebar-second {
+  width: 30%;
+}
+.main-content #sidebar-second .contextual-region .views-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.main-content #sidebar-second .contextual-region .views-row:last-child {
+  margin-bottom: 0;
+}
+.main-content #sidebar-second .contextual-region .views-row .views-field-field-hero-image {
+  margin-right: 10px;
+}
+.main-content #sidebar-second .contextual-region .views-row .views-field-field-hero-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+.main-content #sidebar-second .contextual-region .views-row .views-field-title {
+  width: 70%;
+}
+.main-content #sidebar-second .contextual-region .views-row .views-field-nothing {
+  margin-bottom: 10px;
+}
+.main-content #sidebar-second .contextual-region .views-row .views-field-nothing span {
+  font-size: 13px;
+  color: #757575;
+}
+.main-content #sidebar-second .contextual-region .views-row .views-field-view-node a {
+  color: #FC4C02;
+  font-weight: bold;
 }
 .main-content #block-mainnavigation,
 .main-content #block-views-block-user-info-block-block-1,
@@ -36,8 +127,34 @@ body {
   background-color: white;
   margin-bottom: 30px;
 }
+.main-content #block-mainnavigation .contextual-region,
+.main-content #block-views-block-user-info-block-block-1 .contextual-region,
+.main-content #block-views-block-events-block-1 .contextual-region {
+  margin-top: 30px;
+}
+.main-content #block-mainnavigation ul,
+.main-content #block-views-block-user-info-block-block-1 ul,
+.main-content #block-views-block-events-block-1 ul {
+  list-style: none;
+}
+.main-content #block-mainnavigation ul li,
+.main-content #block-views-block-user-info-block-block-1 ul li,
+.main-content #block-views-block-events-block-1 ul li {
+  margin-bottom: 20px;
+}
+.main-content #block-mainnavigation ul li:last-child,
+.main-content #block-views-block-user-info-block-block-1 ul li:last-child,
+.main-content #block-views-block-events-block-1 ul li:last-child {
+  margin-bottom: 0;
+}
+.main-content #block-mainnavigation ul li a.is-active,
+.main-content #block-views-block-user-info-block-block-1 ul li a.is-active,
+.main-content #block-views-block-events-block-1 ul li a.is-active {
+  color: #FC4C02;
+}
 .main-content > .section {
   margin: 0 30px;
+  width: 50%;
 }
 .main-content > .section .contextual-region {
   padding: 30px;
