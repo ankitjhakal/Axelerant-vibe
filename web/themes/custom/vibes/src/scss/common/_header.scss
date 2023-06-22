@@ -1,5 +1,5 @@
 #page-wrapper {
-    header .layout-container > div {
+    header .layout-container>div {
         background-color: white;
         display: flex;
         justify-content: space-between;
@@ -7,24 +7,30 @@
         border-radius: 20px;
         padding: 20px 30px;
         margin: 30px 0;
+
         form {
             display: flex;
             position: relative;
             width: 100%;
+
             .js-form-item {
-                width: 100%; 
+                width: 100%;
                 text-align: right;
             }
         }
+
         .contextual-region {
             width: 33%;
+
             &#block-vibes-site-branding {
                 display: flex;
                 justify-content: center;
             }
+
             &#block-vibes-search-form-narrow {
                 display: flex;
                 justify-content: flex-end;
+
                 input.form-search {
                     background-color: #F5F5F5;
                     border: none;
@@ -33,6 +39,7 @@
                     width: 100%;
                     max-width: 415px;
                     padding: 0 15px;
+
                     &::-webkit-search-cancel-button {
                         -webkit-appearance: searchfield-cancel-button;
                         position: absolute;
@@ -40,12 +47,14 @@
 
                     }
                 }
+
                 .form-actions {
                     position: absolute;
                     top: 0;
                     right: 20px;
                     height: 100%;
                     display: flex;
+
                     .button {
                         background-color: transparent;
                         border: none;
@@ -53,7 +62,28 @@
                     }
                 }
             }
+
             &#block-views-block-user-info-block-block-1-2 {
+                .views-row {
+                    display: flex;
+                    align-items: center;
+
+                    .views-field-user-picture {
+                        margin-right: 15px;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 20px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .views-field-view-user {
+                        display: none;
+                    }
+                }
+
                 a {
                     text-transform: capitalize;
                     text-decoration: none;
@@ -61,7 +91,7 @@
             }
         }
     }
-   
 
-   
+
+
 }
