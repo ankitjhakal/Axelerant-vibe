@@ -37,7 +37,7 @@ content:
       show_summary: false
       show_icon: true
       show_label: false
-      show_count: false
+      show_count: true
       sort_reactions: none
     third_party_settings: {  }
     weight: 5
