@@ -1,4 +1,4 @@
-uuid: e1506722-b47c-4745-9179-dcd064828481
+uuid: e89817b4-0a56-427f-b75a-9905be3773bf
 langcode: en
 status: true
 dependencies:
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - vibes
-id: views_block__user_info_block_block_1_2
+id: views_block__user_info_block_block_2
 theme: vibes
 region: header
-weight: -9
+weight: -3
 provider: null
-plugin: 'views_block:user_info_block-block_1'
+plugin: 'views_block:user_info_block-block_2'
 settings:
-  id: 'views_block:user_info_block-block_1'
+  id: 'views_block:user_info_block-block_2'
   label: ''
   label_display: '0'
   provider: views

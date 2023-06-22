@@ -14,7 +14,6 @@ dependencies:
     - image.style.large
     - node.type.events
   module:
-    - datetime
     - image
     - options
     - text
@@ -25,21 +24,12 @@ bundle: events
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 200
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_end_date:
-    type: datetime_custom
-    label: hidden
-    settings:
-      timezone_override: ''
-      date_format: 'd F Y - H:i A'
-    third_party_settings: {  }
-    weight: 4
     region: content
   field_event_is:
     type: list_default
@@ -64,17 +54,10 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 5
-    region: content
-  field_start_date:
-    type: datetime_custom
-    label: hidden
-    settings:
-      timezone_override: ''
-      date_format: 'd F Y - H:i A'
-    third_party_settings: {  }
     weight: 3
     region: content
 hidden:
   field_comment: true
+  field_end_date: true
+  field_start_date: true
   links: true

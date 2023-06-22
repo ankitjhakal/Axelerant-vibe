@@ -1,0 +1,54 @@
+uuid: 64961c22-f931-4a7c-a557-a29e54b529c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.post.body
+    - field.field.node.post.field_post_image
+    - field.field.node.post.field_post_video
+    - field.field.node.post.field_video_transcript
+    - node.type.post
+  module:
+    - text
+    - user
+    - video
+id: node.post.teaser
+targetEntityType: node
+bundle: post
+mode: teaser
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_post_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_post_video:
+    type: video_player_list
+    label: hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      muted: false
+      width: '500'
+      height: '480'
+      preload: none
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_video_transcript: true
+  links: true
